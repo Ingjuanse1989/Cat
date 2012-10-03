@@ -1,0 +1,92 @@
+body
+	margin 0
+	font-family font-1
+	font-size 16px
+	transition background-color 800ms linear
+
+	&.no-select
+		user-select none
+
+
+input
+	font-family font-1
+
+section
+	.popup
+		left 50%
+		position absolute
+		top 50%
+		margin-left -105px
+		width 210px
+
+		&.error
+			animation error 160ms linear 100ms 4 alternate
+
+			input
+				border 1px solid red
+				box-shadow 0px 0px 5px red
+
+		.button
+			color white
+			display block
+			float right
+
+
+		.go-back
+			color white
+			float right
+			margin-bottom 9px
+			text-decoration underline
+
+		input
+			border 1px solid transparent
+			box-sizing border-box
+			//box-shadow 0 0 5px color-base-3
+			//border 1px solid color-base-1
+			//box-shadow 0 0 5px color-base-1
+			//border-radius 4px
+			width 100%
+			padding 10px 15px
+			transition box-shadow 300ms linear
+
+			&:active
+			&:focus
+				outline none
+
+
+.main
+	transition opacity 800ms linear
+
+.permanent
+	aside div
+		top 10px
+		position absolute
+		right 10px
+		& > span
+			color white
+			text-decoration underline
+
+		img
+			vertical-align top
+			margin-right 8px
+			text-decoration none
+.hide
+	opacity 0
+
+.ball
+	background-color color-highlight2-3
+	box-shadow 0 0 0 4px white, 0 0 0 8px color-highlight2-3
+	border-radius 40px
+	height 40px
+	position absolute
+	transition box-shadow 800ms linear
+	width 40px
+	z-index 9999
+
+.clearfix:before
+.clearfix:after
+	content ""
+	display table
+
+.clearfix:after
+	clear both

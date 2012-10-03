@@ -1,0 +1,124 @@
+.game
+
+	section
+		//border 1px solid gray
+		height 600px
+		position relative
+		overflow hidden
+		width 1024px
+
+		.player_bear
+		.player_bunny
+			position absolute
+			left 50%
+
+		.player_bear
+			transform rotate(180deg)
+			bottom 0
+			margin-bottom -250px
+			margin-left -100px
+
+		.player_bunny
+			margin-left -64px
+			margin-top -250px
+
+	.handle
+		position absolute
+		top 0
+		width 512px
+		height 600px
+		z-index 99998
+
+	.time
+		color transparent
+		border 0
+		text-shadow none
+		top 50%
+		left 50%
+		position absolute
+		line-height 1em
+		font-size 0
+		margin-left -75px
+		margin-top 0
+		text-align center
+		transition all 300ms linear
+		width 150px
+		z-index 99997
+
+		&.active
+			color color-base-1
+			font-size 16em
+			//margin-left - 75px
+			margin-top - 125px
+
+
+	.permanent
+		display none
+
+	.user-stats
+		box-sizing border-box
+		color color-base-1
+		margin 0
+		padding 0 15px
+		position absolute
+		user-select none
+		width 100%
+		z-index 9999
+
+		&.player
+			transform rotate(180deg)
+			top 0
+
+		&.enemy
+			bottom 0
+
+		span
+			text-transform uppercase
+
+			&:nth-child(1)
+				font-size 5em
+				font-weight bold
+
+		/*span:nth-child(2)
+			float right*/
+
+	.no-active 
+		canvas
+			opacity .5
+			pointer-events none
+
+		.alert-run
+			animation error 160ms linear 100ms 8 alternate
+			display block
+
+
+	.finished
+		canvas
+			opacity .5
+			pointer-events none
+
+		.alert-gameover
+			animation error 160ms linear 100ms 8 alternate
+			display block
+
+	.alert-gameover
+		margin-top -70px
+		li
+			margin-bottom 1em
+			text-decoration underline
+
+
+
+	[class^="alert-"]
+	[class*=" alert-"]
+		background-color color-base-1
+		border-radius 4px
+		color white
+		display none
+		text-align center
+		z-index 99999
+
+	#canvas
+		left 0
+		position absolute
+		top 0

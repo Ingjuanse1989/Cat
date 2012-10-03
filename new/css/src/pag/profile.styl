@@ -1,0 +1,180 @@
+.profile
+	background-color color-base-5
+
+	section > div
+		display inline-block
+		transition margin 600ms linear
+		vertical-align top
+		height 600px - 40px
+		position relative
+		width 1024px
+
+	.to-left
+		margin-left -1024px
+
+	nav
+		ul
+			text-align center
+		li
+			color white
+			display inline-block
+			margin 10px
+			text-decoration underline
+
+			&.active
+				text-decoration none
+
+	.tweet-button
+		background url("../img/social/twitter.png")
+		display block
+		height 20px
+		width 59px
+
+	.stats
+		display none
+
+		
+
+		.info
+			margin-bottom 2em
+
+			/*h2
+				padding-left 52px
+
+			ul
+				padding-left 70px*/
+
+			ul
+			.bluff-wrapper
+				display inline-block
+				vertical-align top
+
+			ul
+			.graph
+				box-sizing brder-box
+				width 50%
+
+	.options
+		display none
+
+		.popup
+			margin-top -65px
+
+	.badges
+		box-sizing border-box
+		padding 10px 20px
+		text-align center
+		width 1024px
+
+		.badge
+			display inline-block
+			height 132px
+			position relative
+			perspective 600px
+			margin 10px
+			width 218px
+
+			&.active
+				.front
+					z-index 900
+					//border-color #eee
+					transform rotateY(-180deg)
+					opacity .2
+					pointer-events none
+
+				.back
+					z-index 1000
+					transform rotateX(0deg) rotateY(0deg)
+					opacity 1
+					pointer-events all
+
+			.tweet-button
+				margin-left auto
+				margin-right auto
+				margin-top 4px
+
+			.face
+				box-sizing border-box
+				float none
+				position absolute
+				//border-radius 2px
+				top 0
+				left 0
+				width inherit
+				height inherit
+				//border 1px solid #ccc
+				transform-style preserve-3d
+				backface-visibility hidden
+				transition all .4s ease-in-out
+
+				ul
+					list-style none
+					//text-align left
+
+				li
+					display inline-block
+				p
+					color white
+				
+
+			.front
+				//background-color color-base-5
+				//border 2px solid transparent
+				text-align center
+				//box-shadow 1px 1px 4px rgba(0,0,0,0.5)
+				transform rotateX(0deg) rotateY(0deg)
+				z-index 900
+
+				p
+					text-decoration underline
+
+
+			.back
+				background-color rgba(0,0,0,.6)
+				//border-radius 0 30px
+				//border 1px solid color-base-1
+				//border 1px solid rgba(255,255,255,.2)
+				//box-shadow 2px 2px 5px rgba(0,0,0,0.4)
+				border-radius 110px
+				padding 0 10px
+				padding-top 36px
+				height 218px
+				width 218px
+				transform rotateY(180deg)
+				opacity 0
+				z-index 800
+				text-align center
+				pointer-events none
+
+				img
+					margin-right 5px
+					margin-top 5px
+					vertical-align bottom
+				h2
+					color white
+					text-transform uppercase
+
+				p
+					//font-family Arial
+					font-size .95em
+
+				a
+				a:visited
+					color color-highlight2-4
+
+			// Specific colors
+			/*&.beta-tester .back
+				border 2px solid #E8DE2F
+			&.strategist .back
+				border 2px solid #8CC63F
+			&.team .back
+				border 2px solid #D9519D
+			&.wins-100 .back
+				border 2px solid #FABF15
+			&.agile .back
+				border 2px solid #F47722*/
+	.ball
+		box-shadow 0 0 0 4px color-base-5, 0 0 0 8px color-highlight2-3
+
+	.permanent
+		display none

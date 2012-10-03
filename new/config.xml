@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.1">
+
+  <author href="http://juan.io" rim:copyright="Copyright 2012 Juan.io">@jp_pinilla</author>
+
+  <name>caju</name>
+  
+  <description>Game test</description>
+
+  <rim:orientation mode="landscape"/>
+
+  <rim:category name="games"/>
+
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit> 
+  </rim:permissions>
+
+  <icon src="img/icon.png"/>
+
+  <content src="index.html"/>
+
+  <feature id="blackberry.ui.dialog"/>
+  <feature id="blackberry.app.event"/>
+  <feature id="blackberry.invoke" required="true"/>
+  <feature id="blackberry.invoke.BrowserArguments" required="true"/>
+  <feature id="blackberry.app.event" required="true"/>
+
+
+  <access subdomains="true" uri="*"/>
+  <access subdomains="true" uri="http://platform.twitter.com"/>
+  <access subdomains="true" uri="http://twitter.com"/>
+  <access subdomains="true" uri="http://cajuws.juan.io"/>
+</widget>
